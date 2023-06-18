@@ -1,0 +1,60 @@
+{
+    "reward": [
+        {
+            "id": 1,
+            "display_name": "Nitro 一個月",
+            "description": "請直接前往 https://nafstore.net/p/discord-nitro-promo/ 購買「一個月」的 Nitro，並在結帳時輸入優惠代碼即可享單件免費優惠，有問題請洽詢 https://discord.gg/nafstore",
+            "price": 3600,
+            "stock": 0,
+            "code": []
+        },
+        {
+            "id": 2,
+            "display_name": "Nitro Basic 一個月",
+            "description": "請直接前往 https://nafstore.net/p/discord-nitro-basic/ 購買「一個月」的 Nitro Basic，並在結帳時輸入優惠代碼即可享單件免費優惠，有問題請洽詢 https://discord.gg/nafstore",
+            "price": 2160,
+            "stock": 0,
+            "code": []
+        },
+        {
+            "id": 3,
+            "display_name": "NAF 商城 Nitro 半價券",
+            "description": "請直接前往 https://nafstore.net/p/discord-nitro-promo/ 購買「一個月」的 Nitro，並在結帳時輸入優惠代碼即可享半價優惠，有問題請洽詢 https://discord.gg/nafstore",
+            "price": 1800,
+            "stock": 1,
+            "code": [
+                "OopsLALALA"
+            ]
+        },
+        {
+            "id": 4,
+            "display_name": "NAF 商城 Nitro Basic 半價券",
+            "description": "請直接前往 https://nafstore.net/p/discord-nitro-basic/ 購買「一個月」的 Nitro Basic，並在結帳時輸入優惠代碼即可享半價優惠，有問題請洽詢 https://discord.gg/nafstore",
+            "price": 1080,
+            "stock": 1,
+            "code": [
+                "owoCode"
+            ]
+        },
+        {
+            "id": 5,
+            "display_name": "NAF 商城 20 元券（不限金額）",
+            "description": "可到 NAF 商城 https://nafstore.net/ 購買任何物品輸入優惠代碼後享有購物車總金額 20 元折價，有問題請洽詢 https://discord.gg/nafstore",
+            "price": 300,
+            "stock": 3,
+            "code": [
+                "295923CCKAKWx7Z6C",
+                "295923CCKAKWx7Z7C",
+                "295923CCKAKWx7Z8C"
+            ]
+        },
+        {
+            "id": 6,
+            "display_name": "Steam 隨機序號",
+            "description": "兌換方式請參考 https://nafstore.net/p/steam-random-key/ 說明，有問題請洽詢 https://discord.gg/nafstore",
+            "price": 50,
+            "stock": 35,
+            "code": ["xdding | Q745B-QT3JH-B4GDF", "xdding | IWBGL-AMM3M-YRDLN"]
+        }
+    ]
+}
