@@ -1,4 +1,5 @@
 # NAFCoin
+這東西主要由 https://discord.gg/nafstore 推廣使用，委託者為 https://nafstore.net
 1. 每日簽到功能
 - 指令：/sign每日簽到
 - 描述：每日簽到，獲得 NAF Coin 1 ~ 15 枚
