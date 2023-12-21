@@ -47,6 +47,8 @@ id：商品序號（選填，留空可查詢現可兌換商品）
   - 會記錄點數變動日誌和兌換紀錄
 # 注意事項
 - 請在程式碼中的 bot.run() 函式中填入您的 Discord 機器人的 Token 來啟動機器人。
+- 基於 Pycord 開發，安裝請見 https://docs.pycord.dev/en/stable/installing.html
 - 程式碼中使用到的模組 point_ext 是自定義模組，但因為程式碼真的寫太糟所以不太想丟出來（雖然主程式也很糟就對了）
 - 如果有任何問題或錯誤，歡迎開 issue 或是透過 https://kangjw.me/ 上面的聯繫方式聯絡我
 - 希望這個程式對您有所幫助，祝您使用愉快！
+
