@@ -96,6 +96,22 @@ async def redeem(ctx, id: discord.Option(int, "商品序號(留空可查詢現�
         reply += f"{i['id']}. `{i['price']:5}`枚、庫存 `{i['stock']:02d}`：**{i['display_name']}**\n"
     await ctx.respond(reply, ephemeral=True)
 
+@bot.slash_command(name="guess猜數字",description="猜對數字就可以獲得 NAF Coin!")
+@commands.guild_only()
+async def guess(ctx, number: discord.Option(int, "想猜的數字（1~5）",required = True, min_value=1,max_value=5),bid: discord.Option(int, "賭金（最少10枚）",required = True, min_value=10)):
+    point = await point_ext.check_point(ctx.author.id)
+    if point < bid:
+        await ctx.respond(f"<a:xo_cross:1096042864858902708> 未有足夠 NAF Coin，您還欠缺 {bid-point} 枚", ephemeral=True)
+        return
+    current_number = random.randint(1,5)
+    if number == current_number:
+        await point_ext.add_point(ctx.author.id, bid)
+        await point_ext.point_log(ctx.author.id,f"猜數字，猜對：{number}，正確 {current_number}",bid)
+        await ctx.respond(f"<a:check:1096042843174342738> 恭喜您猜對了！您贏得了 {bid} 枚 NAF Coin")
+    else:
+        await point_ext.sub_point(ctx.author.id, bid)
+        await point_ext.point_log(ctx.author.id,f"猜數字，猜錯：{number}，正確 {current_number}",bid)
+        await ctx.respond(f"<a:xo_cross:1096042864858902708> 很抱歉，您猜錯了，正確答案是 {current_number} 而不是 {number}，您失去了 {bid} 枚 NAF Coin")
 @bot.event
 async def on_application_command_error(ctx: discord.ApplicationContext, error: discord.DiscordException):
     if isinstance(error, commands.NoPrivateMessage):
